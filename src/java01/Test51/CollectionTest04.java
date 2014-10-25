@@ -11,7 +11,7 @@ class MyLinkedList {
     Object value;
     
     // 다음 버킷의 주소 저장 : 링크 정보 
-    Bucket next;
+    Bucket 주소;
   }
   
   Bucket start;
@@ -25,8 +25,8 @@ class MyLinkedList {
   
   public int add(Object value) {
     end.value = value;
-    end.next = new Bucket();
-    end = end.next;
+    end.주소 = new Bucket();
+    end = end.주소;
     return ++size;
   }
 
@@ -38,21 +38,24 @@ class MyLinkedList {
     if (index < 0 || index >= this.size) 
       return null;
     
-    Bucket cursor = start;
+    Bucket 현재위치 = start;
     for (int i = 1; i <= index; i++) {
-      cursor = cursor.next;
+      현재위치 = 현재위치.주소;
     } //for
-    return cursor.value;
+    return 현재위치.value;
   }
 }
 
 public class CollectionTest04 {
+	
+	
   public static void printArray(MyLinkedList list) {
     for (int i = 0; i < list.size(); i++) {
       System.out.println(list.get(i));
     }// for
   }
 
+  
   public static void main(String[] args) {
     MyLinkedList arr = new MyLinkedList();
     System.out.println("현재 크기: " + arr.add("00000"));

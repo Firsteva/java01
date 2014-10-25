@@ -22,7 +22,7 @@ class MyLinkedList4 {
     Bucket cursor = start;
     
     public boolean hasNext() {
-      if (cursor != end) 
+      if (cursor != end)
         return true;
       else 
         return false;

@@ -3,9 +3,16 @@ package java01.Test44_1;
 public class Tank extends Vehicle {
   int range;
   boolean siegeMode;
+ 
+  
+  
+  
+
   @Override
   public void move(int direction) {
-    if(siegeMode)
+    
+	  System.out.println(def);
+	  if(siegeMode)
       return;
     int distance=3;
     switch(direction){

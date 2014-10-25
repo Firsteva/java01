@@ -23,6 +23,7 @@ abstract public class Mover extends Unit {
   public static final int EAST=3;
   public static final int SOUTH=6;
   public static final int WEST=9;
+ 
   
   // 여기서 열심히 코딩해봐야 어차피 서브클래스에서 다시 작성해야한다.
   // 왜냐면, 탱크와 벌쳐와 솔져의 움직임 공식이 다르기 때문이다.

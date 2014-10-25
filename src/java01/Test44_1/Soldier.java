@@ -12,7 +12,7 @@ public class Soldier extends Mover {
   // signature 란? 메서드의 이름과 리턴 타입, 파라미터 타입을 말함.
   // C 언어에서는 function prototype 이라 부른다.
   
-  @Override // 수퍼 클래스의 메서드를 재정의하는지 검사하라고 컴파일러에게 지시
+   // 수퍼 클래스의 메서드를 재정의하는지 검사하라고 컴파일러에게 지시
   public void move(int dir){
     System.out.println("+1만큼 추가이동");
     
